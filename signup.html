@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Alumni Association</div>
+    </header>
+    
+    <div class="login-container">
+        <div class="form-section">
+            <h2>Create an Account</h2>
+            <p>Sign up to connect with fellow alumni</p>
+            <form id="signup-form">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <input type="password" placeholder="Confirm Password" required>
+                <button type="submit" class="btn" onclick="location.href='home.html'">Sign Up</button>
+            </form>
+            <p>Already have an account? <a href="index.html">Sign In here</a></p>
+        </div>
+        <div class="image-section">
+            <img src="login-img.jpeg" alt="Alumni Background" class="loginimg">
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Alumni Association</p>
+    </footer>
+
+    <script>
+        document.querySelector('#signup-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Account Created!');
+        });
+    </script>
+</body>
+</html>
